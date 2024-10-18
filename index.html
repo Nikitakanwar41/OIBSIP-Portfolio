@@ -14,8 +14,7 @@
         <div class="wrapper">
             <header>
             <div class="logo">
-            <i class="fa-solid fa-n"></i>
-            <div class="logo-text">Nikita Kanwar</div>
+            <div class="logo-text">Nikita's Portfolio</div>
             </div>
             <nav>
                 <div class="togglebtn">
@@ -31,9 +30,41 @@
                 </ul>
             </nav>
             </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="profile.png" alt="Profile-pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm a<span> Web Developer</span></h5>
+                    <h1>Nikita Kanwar</h1>
+                    <p>I'm a frontend web developer working with html css and javascript and have basic skills in react.js.<br>
+                    you can contact me and i work for your team. I give my best.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download resume</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+<script>
+    var togglebtn = document.querySelector(".togglebtn");
+    var nav = document.querySelector(".navlinks");
+    var links = document.querySelector(".navlinks li");
 
+    togglebtn.addEventListener("click",function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+    })
+</script>
     
 </body>
 </html>
